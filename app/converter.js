@@ -8,10 +8,6 @@ exports.hexToRgb = function(hex) {
 
 };
 
-function pad(hex) {
-  return (hex.length === 1 ? "0" + hex : hex);
-}
-
 exports.rgbToHex = function(red, green, blue) {
 
   var redHex   = red.toString(16);
@@ -21,6 +17,8 @@ exports.rgbToHex = function(red, green, blue) {
   return pad(redHex) + pad(greenHex) + pad(blueHex);
 
 };
+
+
 
 function pad(hex) {
   return (hex.length === 1 ? "0" + hex : hex);
